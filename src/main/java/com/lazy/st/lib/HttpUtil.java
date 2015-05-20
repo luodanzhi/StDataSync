@@ -74,4 +74,9 @@ public class HttpUtil {
 
         return retContent;
 	}
+	
+	public static void main(String[] args) {
+		String str = HttpUtil.clientGet("http://table.finance.yahoo.com/table.csv?s=600000.ss&a=00&b=01&c=2015");
+		System.out.println(str);
+	}
 }

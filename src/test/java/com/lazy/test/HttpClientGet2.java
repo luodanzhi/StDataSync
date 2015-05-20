@@ -11,6 +11,7 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
@@ -28,15 +29,16 @@ public class HttpClientGet2 {
         CloseableHttpClient httpclient = HttpClients.createDefault();
           
         // 创建get请求实例  
-        HttpGet httpget = new HttpGet("http://table.finance.yahoo.com/table.csv?s=600000.ss");  
+        HttpPost httppost = new HttpPost("http://table.finance.yahoo.com/table.csv?s=600000.ss&a=00&b=01&c=2015");  
+        //HttpPost httppost = new HttpPost("http://download.finance.yahoo.com/d/quotes.csv?s=000625.sz&f=snohgl1v");  
           
-        System.out.println("executing request "+httpget.getURI());  
+        System.out.println("executing request "+httppost.getURI());  
           
         try
         {  
               
             // 客户端执行get请求 返回响应实体  
-            HttpResponse response = httpclient.execute(httpget);  
+            HttpResponse response = httpclient.execute(httppost);  
               
             // 服务器响应状态行  
             System.out.println(response.getStatusLine());  
