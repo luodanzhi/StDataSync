@@ -5,7 +5,7 @@ import java.util.Date;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 /** 股票数据 */
-public class StockData {
+public class StData {
 	
 	private String code; // 股票编码
 	private String name; // 股票名称
