@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+/** 股票数据 */
 public class StockData {
 	
 	private String code; // 股票编码

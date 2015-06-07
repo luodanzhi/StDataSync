@@ -1,0 +1,47 @@
+<c3p0-config>
+    
+  <default-config>
+    <!-- <property name="automaticTestTable">dual</property> -->
+    <property name="checkoutTimeout">30000</property>
+    <property name="unreturnedConnectionTimeout">30</property>
+    <property name="idleConnectionTestPeriod">30</property>
+    <property name="initialPoolSize">3</property>
+    <property name="maxIdleTime">60</property>
+    <property name="maxPoolSize">30</property>
+    <property name="minPoolSize">3</property>
+    <property name="maxStatements">200</property>
+    
+    <!-- 
+    <property name="driverClass">oracle.jdbc.driver.OracleDriver</property>
+    <property name="jdbcUrl">jdbc:oracle:thin:@192.168.1.246:1521:oradb</property>
+	 -->
+    <property name="driverClass">com.mysql.jdbc.Driver </property>
+    <property name="jdbcUrl">jdbc:mysql://localhost:3306/stock?useUnicode=true&amp;characterEncoding=UTF8</property>
+    <property name="user">stock</property>
+    <property name="password">stockjj</property>
+    
+  </default-config>
+
+  <named-config name="myApp">
+    <!-- <property name="automaticTestTable">dual</property> -->
+    <property name="checkoutTimeout">30000</property>
+    <property name="unreturnedConnectionTimeout">30</property>
+    <property name="idleConnectionTestPeriod">30</property>
+    <property name="initialPoolSize">3</property>
+    <property name="maxIdleTime">60</property>
+    <property name="maxPoolSize">30</property>
+    <property name="minPoolSize">3</property>
+    <property name="maxStatements">200</property>
+    
+    <!-- 
+    <property name="driverClass">oracle.jdbc.driver.OracleDriver</property>
+    <property name="jdbcUrl">jdbc:oracle:thin:@192.168.1.246:1521:oradb</property>
+	 -->
+    <property name="driverClass">com.mysql.jdbc.Driver </property>
+    <property name="jdbcUrl">jdbc:mysql://localhost:3306/stock?useUnicode=true&amp;characterEncoding=UTF8</property>
+    <property name="user">stock</property>
+    <property name="password">stockjj</property>
+    
+  </named-config>
+
+</c3p0-config>
