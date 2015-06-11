@@ -12,7 +12,7 @@ import com.lazy.st.db.jdbc.JdbcBaseDAOImpl;
  *
  */
 public class JdbcService {
-	private static final Logger logger = Logger
+	protected static final Logger logger = Logger
 			.getLogger(JdbcService.class);
 
 	// 数据库操作对象

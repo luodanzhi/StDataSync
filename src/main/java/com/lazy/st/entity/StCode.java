@@ -2,12 +2,19 @@ package com.lazy.st.entity;
 
 import java.util.Date;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
+
 public class StCode {
 
 	private String code; // 股票编码
 	private String name; // 股票名称
 	private String type; // sh , sz 
 	private  Date lastDate; // last change
+	
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
 	
 	public String getCode() {
 		return code;

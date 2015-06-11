@@ -17,7 +17,6 @@ public class StData {
 	private double volume = 0.0;// 总交易手 转成多少万手
 	private double adj = 0.0; // 最后一次交易价格 (今天的收盘价当做加权价格)
 
-
 	public String getCode() {
 		return code;
 	}
